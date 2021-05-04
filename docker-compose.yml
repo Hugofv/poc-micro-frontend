@@ -1,0 +1,21 @@
+version: "3.7"
+services:
+  first-app:
+    container_name: first-app
+    build:
+      context: ./first-app
+
+  second-app:
+    container_name: second-app
+    build:
+      context: ./second-app
+
+  orchestrator:
+    container_name: orchestrator
+    ports:
+      - 80:80
+    depends_on:
+      - first-app
+      - second-app
+    build:
+      context: .
