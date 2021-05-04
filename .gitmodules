@@ -1,0 +1,6 @@
+[submodule "first-app"]
+	path = "first-app"
+	url = https://github.com/Hugofv/poc-micro-frontend-first-app.git
+[submodule "second-app"]
+	path = "second-app"
+	url = https://github.com/Hugofv/poc-micro-frontend-second-app.git
